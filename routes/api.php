@@ -49,3 +49,8 @@ Route::get('/wer', function () {
 Route::post('/register', [UserController::class, 'createUser']);
 
 Route::post('/login', [UserController::class, 'loginUser']);
+
+
+Route::post('/auth/register', [AuthController::class, 'register']);
+Route::post('/auth/login', [AuthController::class, 'login']);
+

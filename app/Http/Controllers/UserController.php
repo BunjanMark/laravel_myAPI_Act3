@@ -33,6 +33,7 @@ class UserController extends Controller
                 ], 401);
             }
 
+
             $user = User::create([
                 'name' => $request->name,
                 'email' => $request->email,
